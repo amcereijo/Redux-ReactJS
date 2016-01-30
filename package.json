@@ -1,0 +1,18 @@
+{
+  "name": "Redux-ReacJS",
+  "dependencies": {
+    "babel": "^6.3.26",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babel-preset-stage-0": "^6.3.13",
+    "babelify": "^7.2.0",
+    "browserify": "^13.0.0",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7",
+    "react-redux": "^4.1.2",
+    "redux": "^3.1.5"
+  },
+  "scripts": {
+    "build": "browserify -t [ babelify --presets [ es2015 stage-0 react ] ] index.js > build.js"
+  }
+}
